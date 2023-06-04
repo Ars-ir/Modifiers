@@ -36,7 +36,8 @@ class MainActivity : ComponentActivity() {
                     .border(5.dp, Color.Yellow)
                     .padding(5.dp)
                     .offset(20.dp, 20.dp)
-                    .border(10.dp, Color.Black))
+                    .border(10.dp, Color.Black)
+                    .padding(10.dp))
                 Spacer(modifier = Modifier.height(50.dp))
                 Text(text = "World!")
             }
