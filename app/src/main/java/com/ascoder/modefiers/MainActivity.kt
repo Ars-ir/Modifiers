@@ -28,6 +28,7 @@ class MainActivity : ComponentActivity() {
                     .border(5.dp, Color.Magenta)
                     .padding(5.dp)
                     .border(5.dp, Color.Cyan)
+                    .padding(5.dp)
             ) {
                 Text(text = "Hello")
                 Spacer(modifier = Modifier.height(50.dp))
