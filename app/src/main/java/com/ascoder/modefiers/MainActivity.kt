@@ -23,8 +23,7 @@ class MainActivity : ComponentActivity() {
                 modifier = Modifier
                     .background(Color.Green)
                     .fillMaxHeight(0.5f)
-//                    .width(300.dp)
-                    .requiredWidth(600.dp)
+                    .width(300.dp)
             ) {
                 Text(text = "Hello")
                 Text(text = "World!")
