@@ -24,7 +24,7 @@ class MainActivity : ComponentActivity() {
                     .background(Color.Green)
                     .fillMaxHeight(0.5f)
                     .fillMaxWidth()
-                    .padding(16.dp)
+                    .padding(top = 50.dp)
             ) {
                 Text(text = "Hello")
                 Text(text = "World!")
