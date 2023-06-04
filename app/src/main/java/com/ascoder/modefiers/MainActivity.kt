@@ -27,7 +27,7 @@ class MainActivity : ComponentActivity() {
                     .padding(top = 50.dp)
             ) {
                 Text(text = "Hello", modifier = Modifier
-                    .offset(50.dp))
+                    .offset(y = 50.dp))
                 Text(text = "World!")
             }
         }
