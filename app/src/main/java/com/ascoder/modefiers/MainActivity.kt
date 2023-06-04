@@ -23,8 +23,8 @@ class MainActivity : ComponentActivity() {
                 modifier = Modifier
                     .background(Color.Green)
                     .fillMaxHeight(0.5f)
-                    .width(300.dp)
-                    .requiredWidth(300.dp)
+//                    .width(300.dp)
+                    .requiredWidth(600.dp)
             ) {
                 Text(text = "Hello")
                 Text(text = "World!")
@@ -34,14 +34,23 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
+fun Columns(name: String) {
+    Column(
+        modifier = Modifier
+            .background(Color.Green)
+            .fillMaxHeight(0.5f)
+            .width(300.dp)
+            .requiredWidth(300.dp)
+    ) {
+        Text(text = "Hello")
+        Text(text = "World $name!")
+    }
 }
 
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
     ModefiersTheme {
-        Greeting("Android")
+        Columns("Android")
     }
 }
