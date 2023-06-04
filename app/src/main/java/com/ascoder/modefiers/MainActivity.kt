@@ -32,7 +32,8 @@ class MainActivity : ComponentActivity() {
                     .border(10.dp, Color.LightGray)
                     .padding(10.dp)
             ) {
-                Text(text = "Hello")
+                Text(text = "Hello", modifier = Modifier
+                    .border(5.dp, Color.Yellow))
                 Spacer(modifier = Modifier.height(50.dp))
                 Text(text = "World!")
             }
