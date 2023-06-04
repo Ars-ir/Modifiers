@@ -11,6 +11,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.ascoder.modefiers.ui.theme.ModefiersTheme
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
@@ -25,9 +26,9 @@ class MainActivity : ComponentActivity() {
                     .fillMaxHeight(0.5f)
                     .fillMaxWidth()
                     .padding(top = 50.dp)
+                    .border(5.dp, Color.Magenta)
             ) {
-                Text(text = "Hello", modifier = Modifier
-                    .offset(x = 0.dp, y = 20.dp))
+                Text(text = "Hello")
                 Spacer(modifier = Modifier.height(50.dp))
                 Text(text = "World!")
             }
